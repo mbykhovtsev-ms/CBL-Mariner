@@ -37,7 +37,6 @@ Source2:        %{name}-%{version}-static-data.tar.gz
 BuildRequires:  fdupes
 BuildRequires:  go >= 1.18
 BuildRequires:  golang-packaging >= 15.0.8
-BuildRequires:  pkg-config >= 0.171.0
 BuildRequires:  protobuf-devel
 BuildRequires:  kernel-headers
 BuildRequires:  make
@@ -84,13 +83,7 @@ mkdir -pv static
 tar -xf %{SOURCE2} -C static/ --no-same-owner
 
 # Build influxdb
-mkdir -pv $HOME/go/src/%{project}
-rm -rf $HOME/go/src/%{project}/*
-cp -avr * $HOME/go/src/%{project}
-cd $HOME/go/src/%{project}
-
 export LDFLAGS="-X main.version=%{version}"
-make pkg-config
 make
 
 
