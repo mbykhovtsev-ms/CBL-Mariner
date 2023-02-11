@@ -15,7 +15,7 @@
 # Please submit bugfixes or comments via https://bugs.opensuse.org/
 #
 
-%define cvs_version    11a
+%define cvs_version    11b
 %define real_name      java-cup
 
 Summary:        LALR Parser Generator in Java
