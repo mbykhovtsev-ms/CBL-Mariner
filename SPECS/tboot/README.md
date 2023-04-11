@@ -57,8 +57,8 @@ flowchart TD
 	id5[PMC repos]
 	id5A([Base])
 	id5B([Nvidia])
-	id6C([Extended])
-	id6D([extras])
+	id5C([Extended])
+	id5D([extras])
 
 	id1 --> |build branch|id2
 	id2 --> |test branch|id3
