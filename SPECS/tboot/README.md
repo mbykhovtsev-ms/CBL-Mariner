@@ -55,22 +55,22 @@ flowchart TD
 	id3C{{Build images with}}
 	id4[Blob storage]
 	id5[PMC repos]
-	id5A(Base)
-	id5B(Nvidia)
-	id6C(Extended)
-	id6D(extras)
+	id5A([Base])
+	id5B([Nvidia])
+	id6C([Extended])
+	id6D([extras])
 
 	id1 --> |build branch|id2
 	id2 --> |test branch|id3
-	id3A -- ||id3
-	id3B -- ||id3
-	id3C -- ||id3
+	id3A --- id3
+	id3B --- id3
+	id3C --- id3
 	id3 --> |pull artifacts into blob storage|id4
 	id4 --> |publish packages to repo|id5
-	id5A -- ||id5
-	id5B -- ||id5
-	id5C -- ||id5
-	id5D -- ||id5
+	id5A --- id5
+	id5B --- id5
+	id5C --- id5
+	id5D --- id5
 
 ```
 
