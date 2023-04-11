@@ -43,7 +43,8 @@ menuentry 'GNU/Linux, with tboot 1.10.2' --class gnu-linux --class gnu --class o
 ### END /etc/grub.d/20_linux_tboot ###
 
 ```mermaid
---- Parallel Publishing Chart
+---
+Parallel Publishing Chart
 ---
 flowchart TD
 	id1[CBL-Mariner topic branch]
